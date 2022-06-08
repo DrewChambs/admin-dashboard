@@ -1,7 +1,251 @@
+/* 7 de junio, 2022 */
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,300;0,600;1,300&family=Roboto&display=swap");
+
+/* 
+    font-family: 'Poppins', sans-serif;
+*/
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+:root {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+body {
+  background-color: rgb(29, 28, 28);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  margin-left: 1em;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 900px;
+
+  background-color: rgb(243, 236, 236);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+/*****************/
+
+/* Navigation */
+.dashboard__side {
+  padding: 1em 2em;
+  background-color: steelblue;
+  color: #fff;
+  grid-column: 1/2;
+  grid-row: 1/5;
+}
+.nav__link {
+  margin-bottom: 3em;
+}
+.nav__link-list,
+.nav__link2-list {
+  margin-bottom: 0.8em;
+}
+
+/* Header */
+.header {
+  padding: 0.5em;
+  background-color: #fff;
+  grid-row: 1/2;
+  grid-column: 2/5;
+}
+.search-icons {
+  display: grid;
+  grid-template-columns: 20px 4fr 1fr;
+}
+.icon-name {
+  display: grid;
+  grid-template-columns: 1fr 2fr 150px;
+  gap: 20px;
+  margin-top: 0.5em;
+  align-items: center;
+}
+input[type="text"] {
+  border: none;
+  border-radius: 100px;
+  width: 70%;
+  background-color: rgb(216, 212, 212);
+  margin-top: 1em;
+  /* margin-left: 4em; */
+  height: 20px;
+}
+.fa-magnifying-glass {
+  margin-top: 1.5em;
+  font-size: 0.8rem;
+}
+
+/* Buttons */
+.button-row {
+  padding-left: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 50px 350px 3fr;
+}
+.user-btn {
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  background-color: steelblue;
+  border-radius: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5em;
+}
+.user-cta {
+  margin-top: 1em;
+}
+/* Typography */
+.projects-title {
+  margin-top: 2em;
+  padding-left: 1em;
+  font-weight: 700;
+}
+.anouncements-title {
+  margin-top: 2em;
+  padding-left: 1em;
+  font-weight: 700;
+  justify-self: end;
+  margin-right: 95px;
+}
+.dashboard-title-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fa-table-columns {
+  font-size: 1.7rem;
+  margin-top: 5px;
+}
+.dashboard__title {
+  margin-bottom: 0.9em;
+  margin-left: 5px;
+  font-size: 1.7rem;
+}
+.anounce-trending {
+  font-size: 0.9rem;
+  margin: 1.2em 0;
+}
+.card__title {
+  font-size: 0.9rem;
+}
+
+.nav__link-anchor,
+.nav__link2-anchor {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+}
+.greeting {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.user-name {
+  font-weight: 900;
+}
+
+/* Main Body */
+article {
+  padding: 1em;
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card {
+  padding: 0.5em;
+  background-color: #fff;
+  border-radius: 5px;
+  border-left: 10px solid gold;
+  /* box-shadow: 4px -3px 14px 4px rgba(0, 0, 0, 0.75); */
+  box-shadow: 4px 0px 20px -4px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+.card p {
+  font-size: 0.8rem;
+  margin-bottom: 2em;
+}
+.main-icons {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+.main-page-titles {
+  grid-column: 2/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Aside */
+aside {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.maintenance-card {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 4px 0px 20px -4px rgba(0, 0, 0, 0.75);
+}
+.maintenance-card > p {
+  font-size: 0.6rem;
+}
+/* Aside Typography */
+.site-maintenance {
+  font-weight: 900;
+}
+.underline-main {
+  width: 150px;
+  height: 2px;
+  background-color: rgb(224, 215, 215);
+  margin: 0.8em 0;
+}
+
+/*  */
+
+/****************/
+/* Emoji Icon */
+.fa-face-grin-wink {
+  font-size: 1.5rem;
+  color: rgb(218, 96, 52);
+  border-radius: 50%;
+}
+.fa-face-angry {
+  color: blue;
+  font-size: 1.5rem;
+}
+.fa-face-grin-tears {
+  color: green;
+  font-size: 1.5rem;
+}
+.fa-skull {
+  color: rebeccapurple;
+  font-size: 1.5rem;
+}
+.maintenance-card ul li {
+  margin-bottom: 1.5em;
 }
