@@ -39,7 +39,8 @@ h2 {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+
+  grid-template-rows: 120px 1fr 1fr 1fr 1fr;
 }
 
 /* Side */
@@ -162,10 +163,18 @@ input[type="text"] {
 /* Main Body **********/
 article {
   padding: 1em;
+  grid-row: 3/4;
   grid-column: 2/4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+.main-page-titles {
+  grid-row: 2/3;
+  grid-column: 2/5;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .projects-title {
   margin-top: 2em;
@@ -208,11 +217,6 @@ article {
   bottom: 0;
   right: 25px;
 }
-.main-page-titles {
-  grid-column: 2/5;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 /* Aside *********/
 aside {
@@ -220,8 +224,8 @@ aside {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  grid-column: 4/5;
   grid-row: 3/4;
+  grid-column: 4/5;
 }
 .maintenance-card {
   padding: 1em;
