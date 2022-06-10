@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin Admin Dashboard</title>
+    <title>Admin Dashboard Odin Project</title>
 
-    <!-- CSS Link -->
+    <!-- CS Link -->
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- Font Awesome -->
@@ -15,58 +15,61 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <div class="dashboard__side">
-        <div class="dashboard-title-logo">
-          <i class="fa-solid fa-table-columns"></i>
-          <h1 class="dashboard__title">Dashboard</h1>
+    <section class="container">
+      <!-- 1 -->
+      <nav class="left-sidebar-nav">
+        <div class="dashboard__side">
+          <div class="dashboard-title-logo">
+            <i class="fa-solid fa-table-columns"></i>
+            <h1 class="dashboard__title">Dashboard</h1>
+          </div>
+          <nav class="nav">
+            <ul class="nav__link">
+              <li class="nav__link-list">
+                <i class="fa-solid fa-house"></i>
+                <a href="#" class="nav__link-anchor">home</a>
+              </li>
+              <li class="nav__link-list">
+                <i class="fa-solid fa-address-card"></i>
+                <a href="#" class="nav__link-anchor">profile</a>
+              </li>
+              <li class="nav__link-list">
+                <i class="fa-solid fa-message"></i>
+                <a href="#" class="nav__link-anchor">messages</a>
+              </li>
+              <li class="nav__link-list">
+                <i class="fa-solid fa-clock"></i>
+                <a href="#" class="nav__link-anchor">history</a>
+              </li>
+              <li class="nav__link-list">
+                <i class="fa-solid fa-scroll"></i>
+                <a href="#" class="nav__link-anchor">tasks</a>
+              </li>
+              <li class="nav__link-list">
+                <i class="fa-solid fa-people-group"></i>
+                <a href="#" class="nav__link-anchor">communities</a>
+              </li>
+            </ul>
+            <ul class="nav__link2">
+              <li class="nav__link2-list">
+                <i class="fa-solid fa-gear"></i>
+                <a href="#" class="nav__link2-anchor">settings</a>
+              </li>
+              <li class="nav__link2-list">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="#" class="nav__link2-anchor">support</a>
+              </li>
+              <li class="nav__link2-list">
+                <i class="fa-solid fa-lock"></i>
+                <a href="#" class="nav__link2-anchor">privacy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav">
-          <ul class="nav__link">
-            <li class="nav__link-list">
-              <i class="fa-solid fa-house"></i>
-              <a href="#" class="nav__link-anchor">home</a>
-            </li>
-            <li class="nav__link-list">
-              <i class="fa-solid fa-address-card"></i>
-              <a href="#" class="nav__link-anchor">profile</a>
-            </li>
-            <li class="nav__link-list">
-              <i class="fa-solid fa-message"></i>
-              <a href="#" class="nav__link-anchor">messages</a>
-            </li>
-            <li class="nav__link-list">
-              <i class="fa-solid fa-clock"></i>
-              <a href="#" class="nav__link-anchor">history</a>
-            </li>
-            <li class="nav__link-list">
-              <i class="fa-solid fa-scroll"></i>
-              <a href="#" class="nav__link-anchor">tasks</a>
-            </li>
-            <li class="nav__link-list">
-              <i class="fa-solid fa-people-group"></i>
-              <a href="#" class="nav__link-anchor">communities</a>
-            </li>
-          </ul>
-          <ul class="nav__link2">
-            <li class="nav__link2-list">
-              <i class="fa-solid fa-gear"></i>
-              <a href="#" class="nav__link2-anchor">settings</a>
-            </li>
-            <li class="nav__link2-list">
-              <i class="fa-solid fa-circle-question"></i>
-              <a href="#" class="nav__link2-anchor">support</a>
-            </li>
-            <li class="nav__link2-list">
-              <i class="fa-solid fa-lock"></i>
-              <a href="#" class="nav__link2-anchor">privacy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
 
-      <!-- Header -->
-      <div class="header">
+      <!-- 2 -->
+      <header class="header">
         <div class="search-icons">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" />
@@ -88,136 +91,146 @@
             <button class="user-btn">Share</button>
           </div>
         </div>
-      </div>
+      </header>
 
-      <!-- Main  -->
-      <div class="main-page-titles">
-        <p class="projects-title">Your Projects</p>
-        <p class="anouncements-title">Anouncements</p>
-      </div>
-
-      <article class="main__content">
-        <div class="card">
-          <h2 class="card__title">Super Cool Project</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus atque repellat alias commodi maiores ducimus?
-          </p>
-          <div class="main-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-eye"></i>
-            <i class="fa-solid fa-code-merge"></i>
+      <!-- 3 -->
+      <article class="main-section">
+        <h2 class="main-section-titles">Your Projects</h2>
+        <div class="main-container">
+          <div class="card">
+            <p class="card__title">Super Cool Project</p>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quod eveniet aperiam consequuntur dolores illo eligendi dolorum
+              expedita, esse fugit?
+            </p>
+            <div class="main-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-code-merge"></i>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2 class="card__title">Less Cool Project</h2>
-          <p>
-            Nisi laboriosam eaque asperiores quibusdam officiis magni autem ea
-            eligendi facere nesciunt, magnam ducimus porro.
-          </p>
-          <div class="main-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-eye"></i>
-            <i class="fa-solid fa-code-merge"></i>
+          <div class="card">
+            <p class="card__title">Less Cool Project</p>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quod eveniet aperiam consequuntur dolores illo eligendi dolorum
+              expedita, esse fugit?
+            </p>
+            <div class="main-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-code-merge"></i>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2 class="card__title">Impossible App</h2>
-          <p>
-            Distinctio deserunt doloremque officiis nihil at ex mollitia
-            perferendis quos rem, pariatur consectetur suscipit ullam.
-          </p>
-          <div class="main-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-eye"></i>
-            <i class="fa-solid fa-code-merge"></i>
+          <div class="card">
+            <p class="card__title">Impossible App</p>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quod eveniet aperiam consequuntur dolores illo eligendi dolorum
+              expedita, esse fugit?
+            </p>
+            <div class="main-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-code-merge"></i>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2 class="card__title">Easy Peasy App</h2>
-          <p>
-            Exercitationem aliquam fugit dolor necessitatibus. Inventore tenetur
-            laudantium odio corporis aspernatur quos aliquam maiores ipsa.
-          </p>
-          <div class="main-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-eye"></i>
-            <i class="fa-solid fa-code-merge"></i>
+          <div class="card">
+            <p class="card__title">Easy Peasy App</p>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quod eveniet aperiam consequuntur dolores illo eligendi dolorum
+              expedita, esse fugit?
+            </p>
+            <div class="main-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-code-merge"></i>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2 class="card__title">Ad Blocker</h2>
-          <p>
-            Odio animi corporis facere ullam quo ad nemo perspiciatis ratione
-            sequi saepe! Aliquid, commodi omnis.
-          </p>
-          <div class="main-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-eye"></i>
-            <i class="fa-solid fa-code-merge"></i>
+          <div class="card">
+            <p class="card__title">Ad Blocker</p>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quod eveniet aperiam consequuntur dolores illo eligendi dolorum
+              expedita, esse fugit?
+            </p>
+            <div class="main-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-code-merge"></i>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2 class="card__title">Money Maker</h2>
-          <p>
-            Qui blanditiis eum incidunt. Numquam consequatur unde illo odit
-            necessitatibus praesentium nesciunt dolorem temporibus voluptas.
-          </p>
-          <div class="main-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-eye"></i>
-            <i class="fa-solid fa-code-merge"></i>
+          <div class="card">
+            <p class="card__title">Money Maker</p>
+            <p class="card__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              quod eveniet aperiam consequuntur dolores illo eligendi dolorum
+              expedita, esse fugit?
+            </p>
+            <div class="main-icons">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-solid fa-code-merge"></i>
+            </div>
           </div>
         </div>
       </article>
 
-      <aside class="maintenance">
-        <div class="maintenance-card">
-          <p class="site-maintenance">Site Maintenance</p>
-          <p>
-            Assumenda perspiciatis facilis tempore exercitationem non
-            praesentium labore doloribus cupiditate?
-          </p>
-          <div class="underline-main"></div>
-          <p class="community">Community Share Day</p>
-          <p>
-            Assumenda perspiciatis facilis tempore exercitationem non
-            praesentium labore doloribus cupiditate?
-          </p>
-          <div class="underline-main"></div>
-          <p class="policy">Updated Privacy Policy</p>
-          <p>
-            Assumenda perspiciatis facilis tempore exercitationem non
-            praesentium labore doloribus cupiditate?
-          </p>
-        </div>
-        <div class="trending">
-          <h2 class="anounce-trending">Trending</h2>
-        </div>
-        <div class="maintenance-card">
-          <ul>
-            <li>
-              <i class="fa-solid fa-face-angry"></i>
-              <p>@grossman</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-face-grin-wink"></i>
-              <p>@samuel</p>
-            </li>
-            <li>
-              <i class="fa-regular fa-face-grin-tears"></i>
-              <p>@rollin</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-skull"></i>
-              <p>@gumbo</p>
-            </li>
-          </ul>
+      <!-- 4 -->
+      <aside class="right-sidebar">
+        <h2 class="main-section-titles">Anouncements</h2>
+        <div class="right-sidebar-container">
+          <div class="right-sidebar-box">
+            <p class="right-sidebar-heading">Maintenance</p>
+            <p class="right-sidebar-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              debitis similique quidem, tempore unde nobis!
+            </p>
+            <!-- Underline -->
+            <div class="underline"></div>
+            <p class="right-sidebar-heading">Community Share Day</p>
+            <p class="right-sidebar-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              debitis similique quidem, tempore unde nobis!
+            </p>
+
+            <!-- Underline -->
+            <div class="underline"></div>
+
+            <p class="right-sidebar-heading">Updated Privacy Policy</p>
+            <p class="right-sidebar-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+              debitis similique quidem, tempore unde nobis!
+            </p>
+          </div>
+          <h2 class="main-section-titles">Trending</h2>
+          <div class="right-sidebar-box">
+            <div class="trending"></div>
+            <div class="right-sidebar-emoji">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-face-angry"></i>
+                  <p>@grossman</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-face-grin-wink"></i>
+                  <p>@samuel</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-face-grin-tears"></i>
+                  <p>@rollin</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-skull"></i>
+                  <p>@gumbo</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </aside>
-    </div>
-
-    <!-- JS Link -->
-    <script src="./js/app.js"></script>
+    </section>
   </body>
 </html>
